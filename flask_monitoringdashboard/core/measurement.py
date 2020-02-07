@@ -3,6 +3,7 @@
     See init_measurement() for more detailed info.
 """
 import time
+import logging
 from functools import wraps
 
 from flask_monitoringdashboard import config
@@ -68,6 +69,7 @@ def is_valid_status_code(status_code):
 
 
 def status_code_from_response(result):
+    logging.error(result)
     """
     Extracts the status code from the result that was returned from the route handler.
 
