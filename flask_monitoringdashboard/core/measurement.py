@@ -63,6 +63,7 @@ def is_valid_status_code(status_code):
     Returns whether the input is a valid status code. A status code is valid if it's an integer value and in the
     range [100, 599] :param status_code: :return:
     """
+    status_code = int(status_code)
     return type(status_code) == int and 100 <= status_code < 600
 
 
