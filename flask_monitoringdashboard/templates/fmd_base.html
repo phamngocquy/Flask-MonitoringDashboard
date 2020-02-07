@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="fmdApp">
 <head>
-    <title>Flask-MonitoringDashboard</title>
+    <title>Marketing portal</title>
     <base href="{{ url_for('dashboard.index') }}">
     <meta charset="utf-8">
 
@@ -14,14 +14,14 @@
           rel="stylesheet" type="text/css">
     <link href="{{ url_for('dashboard.static', filename='css/custom.css') }}"
           rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="{{ url_for('dashboard.static', filename='img/favicon.ico') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('dashboard.static', filename='img/favicon.png') }}"/>
 </head>
 
 {% block body %}
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="navbar-brand brand-plain">
-            <a href="overview"><h4>Flask Monitoring Dashboard</h4></a>
+            <a href="overview"><h4>VNPAY Marketing portal</h4></a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -31,13 +31,6 @@
                     <a class="nav-link text-center" id="sidenavToggler">
                         <i class="fa fa-fw fa-angle-left"></i>
                     </a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                 <span style="color: #adb5bd;">
-                     Automatically monitor the evolving performance of Flask/Python web services
-                 </span>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -53,14 +46,6 @@
         <div class="container page">
             <div id="content" class="main" ng-view></div>
         </div>
-        <footer class="sticky-footer">
-            <div class="container">
-                <div class="text-center">
-                    Click <a target="_blank" href="http://flask-monitoringdashboard.readthedocs.io">here</a> to read
-                    advanced documentation.
-                </div>
-            </div>
-        </footer>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
